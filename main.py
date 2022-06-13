@@ -16,5 +16,3 @@ def process_uk_holidays(in_file, out_file):
 
     with open(out_file, 'w') as f_p:
         f_p.write('Holiday Name, Holiday Date\n' + ' 00:00:00\n'.join(holidays))
-
-process_uk_holidays('UKHolidays.csv', 'UKHolidaysProcessed.csv')
