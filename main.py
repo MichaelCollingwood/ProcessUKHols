@@ -14,4 +14,4 @@ def process_uk_holidays(in_file, out_file):
             holidays.append(f'{title[1:-1]}, {date[1:-1]}')
 
     with open(out_file, 'w') as f_p:
-        f_p.write('title, date\n' + '\n'.join(holidays))
+        f_p.write('title, date\n' + '\n'.join(holidays) + ' 00:00:00')
